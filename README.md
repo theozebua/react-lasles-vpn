@@ -38,3 +38,7 @@ Start the server
 ## Design
 
 Design by [@didikurniawan](https://www.figma.com/@didikurniawan)
+
+## License
+
+[MIT](https://github.com/theozebua/react-lasles-vpn/blob/main/LICENSE)
