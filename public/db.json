@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Viezh Robert",
+        "from": "Warsaw, Poland",
+        "img": "img/person-1.png",
+        "star": 4.5,
+        "text": "“Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best”."
+    },
+    {
+        "name": "Yessica Christy",
+        "from": "Shanxi, China",
+        "img": "img/person-2.png",
+        "star": 4.5,
+        "text": "“I like it because I like to travel far and still can connect with high speed.”."
+    },
+    {
+        "name": "Kim Young Jou",
+        "from": "Seoul, South Korea",
+        "img": "img/person-3.png",
+        "star": 4.5,
+        "text": "“This is very unusual for my business that currently requires a virtual private network that has high security.”."
+    },
+    {
+        "name": "Viezh Robert",
+        "from": "Warsaw, Poland",
+        "img": "img/person-1.png",
+        "star": 4.5,
+        "text": "“Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best”."
+    },
+    {
+        "name": "Yessica Christy",
+        "from": "Shanxi, China",
+        "img": "img/person-2.png",
+        "star": 4.5,
+        "text": "“I like it because I like to travel far and still can connect with high speed.”."
+    },
+    {
+        "name": "Kim Young Jou",
+        "from": "Seoul, South Korea",
+        "img": "img/person-3.png",
+        "star": 4.5,
+        "text": "“This is very unusual for my business that currently requires a virtual private network that has high security.”."
+    }
+]
