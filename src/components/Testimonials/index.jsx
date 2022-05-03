@@ -1,33 +1,29 @@
-import personOne from '../../assets/img/person-1.png'
-import personTwo from '../../assets/img/person-2.png'
-import personThree from '../../assets/img/person-3.png'
+import { useEffect, useState } from 'react'
 import Card from './card'
 import { ArrowSmLeftIcon, ArrowSmRightIcon } from '@heroicons/react/solid'
 import './index.css'
 
 const Testimonials = () => {
+  const [testimonials, setTestimonials] = useState([])
+
+  useEffect(() => {
+    const fetchTestimonials = async () => {
+      const res = await fetch('../../db.json')
+      const data = await res.json()
+
+      setTestimonials(data)
+    }
+
+    fetchTestimonials()
+  }, [])
+
   return (
     <div className='bg-slate-50'>
       <div className='container relative mx-auto px-3 pt-20 pb-36'>
         <div className='custom-scrollbar flex snap-x gap-8 overflow-x-auto px-2 pb-8'>
-          <Card
-            name='Viezh Robert'
-            from='Warsaw, Poland'
-            img={personOne}
-            star='4.5'
-            text='“Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best”.'
-          />
-          <Card name='Yessica Christy' from='Shanxi, China' img={personTwo} star='4.5' text='“I like it because I like to travel far and still can connect with high speed.”.' />
-          <Card name='Kim Young Jou' from='Seoul, South Korea' img={personThree} star='4.5' text='“This is very unusual for my business that currently requires a virtual private network that has high security.”.' />
-          <Card
-            name='Viezh Robert'
-            from='Warsaw, Poland'
-            img={personOne}
-            star='4.5'
-            text='“Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best”.'
-          />
-          <Card name='Yessica Christy' from='Shanxi, China' img={personTwo} star='4.5' text='“I like it because I like to travel far and still can connect with high speed.”.' />
-          <Card name='Kim Young Jou' from='Seoul, South Korea' img={personThree} star='4.5' text='“This is very unusual for my business that currently requires a virtual private network that has high security.”.' />
+          {testimonials.map((testimonial) => {
+            return <Card testimonial={testimonial} />
+          })}
         </div>
         <div className='mt-10 flex items-center justify-between px-2 pb-8'>
           <div className='flex gap-3'>
