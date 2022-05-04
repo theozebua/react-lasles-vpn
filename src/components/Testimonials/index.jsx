@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import Card from './card'
+import Card from './Card'
 import { ArrowSmLeftIcon, ArrowSmRightIcon } from '@heroicons/react/solid'
 import './index.css'
 
@@ -8,7 +8,7 @@ const Testimonials = () => {
 
   useEffect(() => {
     const fetchTestimonials = async () => {
-      const res = await fetch('../../db.json')
+      const res = await fetch('testimonials.json')
       const data = await res.json()
 
       setTestimonials(data)
