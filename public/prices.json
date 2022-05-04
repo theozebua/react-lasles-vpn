@@ -1,0 +1,38 @@
+[
+    {
+        "title": "Free Plan",
+        "img": "svg/illustration-free.svg",
+        "features": [
+            "Unlimited Bandwith",
+            "Encrypted Connection",
+            "No Traffic Logs",
+            "Works On All Devices"
+        ],
+        "price": 0
+    },
+    {
+        "title": "Standard Plan",
+        "img": "svg/illustration-standard.svg",
+        "features": [
+            "Unlimited Bandwith",
+            "Encrypted Connection",
+            "No Traffic Logs",
+            "Works On All Devices",
+            "Connect Anywhere"
+        ],
+        "price": 9
+    },
+    {
+        "title": "Premium Plan",
+        "img": "svg/illustration-premium.svg",
+        "features": [
+            "Unlimited Bandwith",
+            "Encrypted Connection",
+            "No Traffic Logs",
+            "Works On All Devices",
+            "Connect Anywhere",
+            "Get New Features"
+        ],
+        "price": 12
+    }
+]
