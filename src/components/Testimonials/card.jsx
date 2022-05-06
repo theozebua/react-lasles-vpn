@@ -1,8 +1,15 @@
 import { StarIcon } from '@heroicons/react/solid'
+import { useEffect, useRef } from 'react'
 
-const Card = ({ testimonial }) => {
+const Card = ({ testimonial, setCardWidth }) => {
+  const cardWidth = useRef(null)
+
+  useEffect(() => {
+    setCardWidth(cardWidth.current.getBoundingClientRect().width + 32)
+  })
+
   return (
-    <div className='w-full min-w-[264px] max-w-sm snap-center rounded-lg border-2 p-3 transition duration-300 hover:border-primary lg:min-w-[364px]'>
+    <div ref={cardWidth} className='w-full min-w-[264px] max-w-sm rounded-lg border-2 bg-white p-3 transition duration-300 hover:border-primary lg:min-w-[364px]'>
       <div className='flex items-center justify-between'>
         <div className='flex items-center gap-4'>
           <img src={testimonial.img} className='h-10 w-10' alt={testimonial.name} />
