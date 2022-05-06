@@ -9,9 +9,9 @@ const Card = ({ price }) => {
             <img src={price.img} className='w-full' alt={price.title} />
             <h4 className='text-center text-lg font-bold'>{price.title}</h4>
             <ul className='flex flex-col gap-3'>
-              {price.features.map((feature) => {
+              {price.features.map((feature, index) => {
                 return (
-                  <li className='flex items-center gap-6 text-gray-500'>
+                  <li key={index} className='flex items-center gap-6 text-gray-500'>
                     <CheckIcon color='#2FAB73' className='h-5 w-5' />
                     {feature}
                   </li>
