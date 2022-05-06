@@ -31,7 +31,7 @@ const Testimonials = () => {
   return (
     <div className='bg-slate-50'>
       <div className='container relative mx-auto px-3 pt-20 pb-36'>
-        <div ref={container} className='custom-scrollbar flex gap-8 overflow-x-auto scroll-smooth px-2 pb-8'>
+        <div ref={container} className='custom-scrollbar flex gap-8 overflow-x-auto scroll-smooth px-2'>
           {testimonials.map((testimonial, index) => {
             return <Card key={index} testimonial={testimonial} setCardWidth={setCardWidth} />
           })}

@@ -9,7 +9,7 @@ const Card = ({ testimonial, setCardWidth }) => {
   })
 
   return (
-    <div ref={cardWidth} className='w-full min-w-[264px] max-w-sm rounded-lg border-2 bg-white p-3 transition duration-300 hover:border-primary lg:min-w-[364px]'>
+    <div ref={cardWidth} className='my-16 w-full min-w-[264px] max-w-sm rounded-lg border-2 bg-white p-3 transition duration-300 hover:border-primary hover:shadow-2xl hover:shadow-gray-500/25 lg:min-w-[364px]'>
       <div className='flex items-center justify-between'>
         <div className='flex items-center gap-4'>
           <img src={testimonial.img} className='h-10 w-10' alt={testimonial.name} />
